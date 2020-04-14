@@ -1,0 +1,192 @@
+.head {
+    background-color: ghostwhite;
+    border: 1px solid lightgray;
+}
+.headtext {
+    vert-align: middle;
+    font-family: Calibri;
+    font-size: 20pt;
+}
+.inline-link-3 {
+    display: inline-block;
+    position: relative;
+    padding-left: 6px;
+    /* Font styles */
+    text-decoration: none;
+    color: #6AB3EC;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+.inline-link-3:hover {
+    color: #3C9CE7;
+}
+
+.inline-link-3:before {
+    content: "\25BA";
+    font-size: 80%;
+    display: inline-block;
+    padding-right: 3px;
+    pointer-events: none;
+}
+
+.inline-link-3:hover:before {
+    color: #F2BF97;
+}
+.menu-button{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: beige;
+    border: 1px solid lightgray;
+}
+.menu-button-text{
+    vert-align: middle;
+    font-family: Calibri;
+    font-size: 15pt;
+}
+.menu-button:hover{
+    background-color: bisque;
+    border: 2px solid grey;
+}
+.profile-avatar
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: beige;
+    border: 1px solid lightgray;
+}
+.profile-avatar-text
+{
+    vert-align: middle;
+    font-family: Calibri;
+    font-size: 18pt;
+    margin: 5px;
+}
+.modalbackground {
+    margin: 0; /* убираем отступы */
+    padding: 0; /* убираем отступы */
+    position: fixed; /* фиксируем положение */
+    top:0; /* растягиваем блок по всему экрану */
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.5); /* полупрозрачный цвет фона */
+    z-index:100; /* выводим фон поверх всех слоев на странице браузера */
+    opacity:0; /* Делаем невидимым */
+    pointer-events: none; /* элемент невидим для событий мыши */
+}
+
+/* при отображении модального окно - именно здесь начинается магия */
+.modalbackground:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+}
+
+/* ширина диалогового окна и его отступы от экрана */
+.modalwindow {
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 2%;
+    background: #fff;
+    border-radius: 3px;
+}
+
+/* настройка заголовка */
+.modalwindow h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/* оформление сообщение */
+.modalwindow p {
+    padding: 0;
+    margin: 4% 0 8% 0;
+}
+
+/* вид кнопки ЗАКРЫТЬ */
+.modalwindow a {
+    display: block;
+    color: #fff;
+    background: #369;
+    padding: 2%;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* вид кнопки ЗАКРЫТЬ при наведении на нее мыши */
+.modalwindow a:hover {
+    background: #47a;
+}
+
+.line {
+    display: block;
+    border: none;
+    color: #333;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    padding: 5px 2px 0 2px;
+    font-family: Calibri;
+    font-size: 16pt;
+}
+
+.line:focus {
+    outline: none;
+    border-color: #51CBEE;
+}
+.metro {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background: #08C;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 20pt;
+}
+
+.metro_red {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background: #8B0000;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 20pt;
+}
+
+.metro:hover {
+    background: #0AF
+}
+.intext
+{
+    font-family: Calibri;
+    font-size: 20pt;
+}
+.depth {
+    display: block;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: linear-gradient(#eee, #fff);
+    transition: all 0.3s ease-out;
+    box-shadow:
+            inset 0 1px 4px rgba(0,0,0,0.4);
+    padding: 5px;
+    color: #555;
+    font-family: Calibri;
+    font-size: 20pt;
+}
+
+.depth:focus {
+    outline: none;
+    background-position: 0 -1.7em;
+}
