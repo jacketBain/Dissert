@@ -22,7 +22,7 @@
     </header>
 
     <div align="center">
-    <form id="changeAlbum" method="post" action="${pageContext.request.contextPath}/managerAlbum?action=add">
+    <form id="addAlbum" method="post" action="${pageContext.request.contextPath}/managerAlbum?action=add">
         <p class="profile-avatar-text">Добавление альбома</p>
         <div>
             <jsp:useBean id="listGenres" type="java.util.List<com.freemscp.model.Genre>" scope="request"/>

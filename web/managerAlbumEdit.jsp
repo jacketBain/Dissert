@@ -26,13 +26,13 @@
         <p class="profile-avatar-text">Изменение данных об альбоме</p>
         <div>
             <jsp:useBean id="listGenres" type="java.util.List<com.freemscp.model.Genre>" scope="request"/>
-
             <table class="profile-avatar">
                 <tbody>
                 <tr class="profile-avatar-text">
                     <td>Идентификатор альбома : </td>
                     <td><input hidden name="albumID" type="text" required value="${chAlbumID}">
-                        ${chAlbumID}</td>
+                        ${chAlbumID}
+                    </td>
                 </tr>
                 <tr class="profile-avatar-text">
                     <td>Название альбома : </td>

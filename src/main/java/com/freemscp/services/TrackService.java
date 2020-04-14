@@ -15,6 +15,8 @@ public class TrackService {
         return trackDAO.findById(id);
     }
 
+    public List<Track> findTracksByUser(Integer id) {return  trackDAO.findTracksByUser(id);}
+
     public void saveTrack(Track track) {
         trackDAO.save(track);
     }

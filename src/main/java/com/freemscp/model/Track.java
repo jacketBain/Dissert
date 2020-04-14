@@ -17,13 +17,14 @@ public class Track {
     private String trackName;
 
     @Column(name = "track_time")
-    private Time trackTime;
+    private String trackTime;
 
     @Column(name = "bpm")
     private short bpm;
 
+    @Lob
     @Column(name = "file_mp3")
-    private Blob fileMP3;
+    private byte[] fileMP3;
 
     @ManyToOne
     @JoinColumn(name = "id_keynote")
@@ -36,7 +37,7 @@ public class Track {
     public Track() {
     }
 
-    public Track(String trackName, Time trackTime, short bpm, Blob fileMP3, KeyNote id_keynote, Album id_album) {
+    public Track(String trackName, String trackTime, short bpm, byte[] fileMP3, KeyNote id_keynote, Album id_album) {
         this.trackName = trackName;
         this.trackTime = trackTime;
         this.bpm = bpm;
@@ -61,11 +62,11 @@ public class Track {
         this.trackName = trackName;
     }
 
-    public Time getTrackTime() {
+    public String getTrackTime() {
         return trackTime;
     }
 
-    public void setTrackTime(Time trackTime) {
+    public void setTrackTime(String trackTime) {
         this.trackTime = trackTime;
     }
 
@@ -77,11 +78,11 @@ public class Track {
         this.bpm = bpm;
     }
 
-    public Blob getFileMP3() {
+    public byte[] getFileMP3() {
         return fileMP3;
     }
 
-    public void setFileMP3(Blob fileMP3) {
+    public void setFileMP3(byte[] fileMP3) {
         this.fileMP3 = fileMP3;
     }
 

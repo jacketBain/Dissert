@@ -1,12 +1,17 @@
 package com.freemscp.dao.impl;
 
 import com.freemscp.dao.IDao;
+import com.freemscp.model.Album;
 import com.freemscp.model.Genre;
 import com.freemscp.model.KeyNote;
 import com.freemscp.utils.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.persistence.NoResultException;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class KeyNoteDAO implements IDao<KeyNote, Integer> {
@@ -21,6 +26,21 @@ public class KeyNoteDAO implements IDao<KeyNote, Integer> {
         session.save(keyNote);
         tx1.commit();
         session.close();
+    }
+
+    public KeyNote findByName(String name) {
+        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+        CriteriaQuery<KeyNote> criteriaQuery = criteriaBuilder.createQuery(KeyNote.class);
+        Root<KeyNote> root = criteriaQuery.from(KeyNote.class);
+        criteriaQuery.select(root)
+                .where(criteriaBuilder.equal(root.get("keyNote"), name));
+        try {
+            return session.createQuery(criteriaQuery).getSingleResult();
+        }
+        catch (NoResultException ex) {
+            return null;
+        }
     }
 
     public void update(KeyNote keyNote) {

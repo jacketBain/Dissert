@@ -25,6 +25,7 @@ public class ManagerAlbumServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
+
         HttpSession session = req.getSession();
         req.setCharacterEncoding("UTF-8");
         req.setAttribute("listGenres",genreService.findAllGenres());
@@ -47,12 +48,12 @@ public class ManagerAlbumServlet extends HttpServlet {
             Album album = new Album();
             album = albumService.findAlbum(Integer.parseInt(req.getParameter("id_ch")));
             albumService.deleteAlbum(album);
-            req.setAttribute("listAlbums", albumService.findAllAlbums());
+            req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
             req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
         }
         else
         {
-            req.setAttribute("listAlbums", albumService.findAllAlbums());
+            req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
             req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
         }
 
@@ -73,7 +74,7 @@ public class ManagerAlbumServlet extends HttpServlet {
                 album.setAlbumName(req.getParameter("albumName"));
                 albumService.updateAlbum(album);
 
-                req.setAttribute("listAlbums", albumService.findAllAlbums());
+                req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
                 req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
                 break;
 
@@ -91,12 +92,12 @@ public class ManagerAlbumServlet extends HttpServlet {
                 album.setAlbumName(req.getParameter("albumName"));
                 albumService.saveAlbum(album);
 
-                req.setAttribute("listAlbums", albumService.findAllAlbums());
+                req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
                 req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
                 break;
 
             default:
-                req.setAttribute("listAlbums", albumService.findAllAlbums());
+                req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
                 req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
                 break;
         }

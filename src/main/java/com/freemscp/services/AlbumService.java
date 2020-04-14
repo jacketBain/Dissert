@@ -2,6 +2,7 @@ package com.freemscp.services;
 
 import com.freemscp.dao.impl.AlbumDAO;
 import com.freemscp.model.Album;
+import com.freemscp.model.Genre;
 
 import java.util.List;
 
@@ -15,6 +16,13 @@ public class AlbumService {
     public Album findAlbum(int id) {
         return albumDAO.findById(id);
     }
+
+    public Album findAlbumByName(String name)
+    {
+        return albumDAO.findByName(name);
+    }
+
+    public List<Album> findAlbumsByUser (Integer id) { return albumDAO.findAlbumsByUser(id);}
 
     public void saveAlbum(Album album) {
         albumDAO.save(album);
