@@ -1,6 +1,7 @@
 package com.freemscp.servlets;
 
 
+import com.freemscp.model.Album;
 import com.freemscp.model.Artist;
 import com.freemscp.model.KeyNote;
 import com.freemscp.model.Track;
@@ -27,6 +28,7 @@ import java.rmi.server.ExportException;
 import java.sql.Blob;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -74,9 +76,15 @@ public class ManagerTrackServlet  extends HttpServlet {
         }
         else
         {
-            req.setAttribute("listTracks",trackService.findTracksByUser(artistService.findArtistByLogin((String)session
-                    .getAttribute("login")).getId()));
-            req.getRequestDispatcher("/managerTrack.jsp").forward(req, resp);
+            List<Album> albumList = albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId());
+            if(albumList.size()==0) {
+                req.getRequestDispatcher("/managerNoAlbum.jsp").forward(req, resp);
+            }
+            else {
+                req.setAttribute("listTracks",trackService.findTracksByUser(artistService.findArtistByLogin((String)session
+                        .getAttribute("login")).getId()));
+                req.getRequestDispatcher("/managerTrack.jsp").forward(req, resp);
+            }
         }
     }
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException

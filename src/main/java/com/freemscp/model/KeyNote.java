@@ -1,6 +1,7 @@
 package com.freemscp.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,10 +11,11 @@ import java.util.List;
 public class KeyNote {
     @Id
     @GeneratedValue(generator = "SEQ_KYNT")
-    @Column(name = "id_keynote")
+    @Column(name = "id_keynote", nullable = false)
     private int id;
 
-    @Column(name = "key_note")
+
+    @Column(name = "key_note", nullable = false)
     private String keyNote;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_keynote")

@@ -1,7 +1,10 @@
 package com.freemscp.model;
 
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
+
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -13,21 +16,25 @@ public class Album {
 
     @Id
     @GeneratedValue(generator = "SEQ_ALBUM")
-    @Column(name = "id_album")
+    @Column(name = "id_album", nullable = false)
     private int id;
 
-    @Column(name = "album_name")
+
+    @Column(name = "album_name", nullable = false)
     private String albumName;
 
-    @Column(name = "album_year")
+
+    @Column(name = "album_year", nullable = false)
     private String albumYear;
 
-    @ManyToOne
-    @JoinColumn(name = "id_artist")
-    private Artist id_artist;
 
     @ManyToOne
-    @JoinColumn(name = "id_genre")
+    @JoinColumn(name = "id_artist", nullable = false)
+    private Artist id_artist;
+
+
+    @ManyToOne
+    @JoinColumn(name = "id_genre", nullable = false)
     private Genre id_genre;
 
     @OneToMany(cascade = CascadeType.ALL ,fetch = FetchType.LAZY, mappedBy = "id_album")

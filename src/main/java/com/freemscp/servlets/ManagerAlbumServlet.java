@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @WebServlet("/managerAlbum")
 public class ManagerAlbumServlet extends HttpServlet {
@@ -48,13 +49,25 @@ public class ManagerAlbumServlet extends HttpServlet {
             Album album = new Album();
             album = albumService.findAlbum(Integer.parseInt(req.getParameter("id_ch")));
             albumService.deleteAlbum(album);
-            req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
-            req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
+            List<Album> albumList = albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId());
+            if(albumList.size()==0) {
+                req.getRequestDispatcher("/managerNoAlbum.jsp").forward(req, resp);
+            }
+            else {
+                req.setAttribute("listAlbums", albumList);
+                req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
+            }
         }
         else
         {
-            req.setAttribute("listAlbums", albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId()));
-            req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
+            List<Album> albumList = albumService.findAlbumsByUser(artistService.findArtistByLogin((String)session.getAttribute("login")).getId());
+            if(albumList.size()==0) {
+                req.getRequestDispatcher("/managerNoAlbum.jsp").forward(req, resp);
+            }
+            else {
+                req.setAttribute("listAlbums", albumList);
+                req.getRequestDispatcher("/managerAlbum.jsp").forward(req, resp);
+            }
         }
 
 
@@ -69,7 +82,7 @@ public class ManagerAlbumServlet extends HttpServlet {
             case "change" :
                 album.setId(Integer.parseInt(req.getParameter("albumID")));
                 album.setId_artist(artistService.findArtistByLogin((String)session.getAttribute("login")));
-                album.setAlbumYear(req.getParameter("albumYear"));
+                album.setAlbumYear(albumService.findAlbum(Integer.parseInt(req.getParameter("albumID"))).getAlbumYear());
                 album.setId_genre((genreService.findGenreByName(req.getParameter("albumGenre"))));
                 album.setAlbumName(req.getParameter("albumName"));
                 albumService.updateAlbum(album);

@@ -1,6 +1,7 @@
 package com.freemscp.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,19 +12,23 @@ import java.util.List;
 public class Artist {
     @Id
     @GeneratedValue(generator = "SEQ_ARTST")
-    @Column(name = "id_artist")
+    @Column(name = "id_artist", nullable = false)
     private int id;
 
-    @Column(name = "artist_name")
+
+    @Column(name = "artist_name", nullable = false)
     private String artistName;
 
-    @Column(name = "login")
+
+    @Column(name = "login", nullable = false)
     private String login;
 
-    @Column(name = "password")
+
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "dateRegestration")
+
+    @Column(name = "dateRegestration", nullable = false)
     private Date dateReg;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_artist")

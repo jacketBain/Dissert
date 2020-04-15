@@ -25,14 +25,23 @@
                 <table>
                     <tr class="profile-avatar-text">
                         <td rowspan="3"><img src="resources/img/song.png" width="128" height="128"></td>
+                        <td><img src="resources/img/track.png" width="32" height="32"></td>
                         <td>${listTracks.trackName}</td>
+                        <td><img src="resources/img/genre.png" width="32" height="32"></td>
+                        <td>${listTracks.id_album.id_genre.genreName}</td>
                         <td rowspan="3"><audio src="${pageContext.request.contextPath}/player?id_playable=${listTracks.id}" controls="controls"></audio></td>
                     </tr>
                     <tr class="profile-avatar-text">
+                        <td><img src="resources/img/album.png" width="32" height="32"></td>
                         <td>${listTracks.id_album.albumName}</td>
+                        <td><img src="resources/img/year.png" width="32" height="32"></td>
+                        <td>${listTracks.id_album.albumYear}</td>
                     </tr>
                     <tr class="profile-avatar-text">
+                        <td><img src="resources/img/avatr.png" width="32" height="32"></td>
                         <td>${listTracks.id_album.id_artist.artistName}</td>
+                        <td><img src="resources/img/noteKey.png" width="32" height="32"></td>
+                        <td>${listTracks.id_keynote.keyNote}</td>
                     </tr>
                 </table>
             </div>

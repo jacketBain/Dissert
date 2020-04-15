@@ -15,6 +15,7 @@
                     </th>
                     <th> <p class="headtext">Музыкант : ${name}</p></th>
                     <th><a class="inline-link-3" href="${pageContext.request.contextPath}/logout">Выйти</a></th>
+                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/index.jsp">Вернуться в главное меню</a></th>
                 </tr>
             </table>
         </div>

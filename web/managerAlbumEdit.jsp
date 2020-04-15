@@ -39,10 +39,6 @@
                     <td><input class="depth" name="albumName" type="text" required value="${chAlbumName}"></td>
                 </tr>
                 <tr class="profile-avatar-text">
-                    <td>Год публикации : </td>
-                    <td><input class="depth" name="albumYear"  type="text" required value="${chAlbumYear}"></td>
-                </tr>
-                <tr class="profile-avatar-text">
                     <td>Жанр : </td>
                     <td>
                         <select class="profile-avatar-text" name="albumGenre" size="1">

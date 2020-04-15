@@ -1,6 +1,7 @@
 package com.freemscp.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,10 +11,11 @@ import java.util.List;
 public class Genre {
     @Id
     @GeneratedValue(generator = "SEQ_GENRE")
-    @Column(name = "id_genre")
+    @Column(name = "id_genre", nullable = false)
     private int id;
 
-    @Column(name = "genre_name")
+
+    @Column(name = "genre_name", nullable = false)
     private String genreName;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_genre")

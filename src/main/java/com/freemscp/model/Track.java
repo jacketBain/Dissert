@@ -1,6 +1,7 @@
 package com.freemscp.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.sql.Blob;
 import java.sql.Time;
 
@@ -10,28 +11,34 @@ import java.sql.Time;
 public class Track {
     @Id
     @GeneratedValue(generator = "SEQ_TRACK")
-    @Column(name = "id_track")
+    @Column(name = "id_track", nullable = false)
     private int id;
 
-    @Column(name = "track_name")
+
+    @Column(name = "track_name", nullable = false)
     private String trackName;
 
-    @Column(name = "track_time")
+
+    @Column(name = "track_time", nullable = false)
     private String trackTime;
 
-    @Column(name = "bpm")
+
+    @Column(name = "bpm", nullable = false)
     private short bpm;
 
+
     @Lob
-    @Column(name = "file_mp3")
+    @Column(name = "file_mp3", nullable = false)
     private byte[] fileMP3;
 
-    @ManyToOne
-    @JoinColumn(name = "id_keynote")
-    private KeyNote id_keynote;
 
     @ManyToOne
-    @JoinColumn(name = "id_album")
+    @JoinColumn(name = "id_keynote", nullable = false)
+    private KeyNote id_keynote;
+
+
+    @ManyToOne
+    @JoinColumn(name = "id_album", nullable = false)
     private Album id_album;
 
     public Track() {
