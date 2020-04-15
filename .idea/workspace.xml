@@ -24,7 +24,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fff69bcf-f856-4483-a43f-a9fd5bf56e89" name="Default Changelist" comment="Можно работать с таблицами треков и альбомов" />
+    <list default="true" id="fff69bcf-f856-4483-a43f-a9fd5bf56e89" name="Default Changelist" comment="Можно работать с таблицами треков и альбомов (и слушать mp3)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/MusicPlayerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/MusicPlayerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/ProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/ProfileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ManagerTrackServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ManagerTrackServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/player.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ManagerTrackServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ManagerTrackServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/managerTrackAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/managerTrackAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/player.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/playerTracks.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/mainStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/test.mp3" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,12 +80,12 @@
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jacke\IdeaProjects\FreeMSCP\web\WEB-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jacke\IdeaProjects\FreeMSCP\src\main\java\com\freemscp\servlets" />
       <recent name="C:\Users\Jacke\IdeaProjects\FreeMSCP\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jacke\IdeaProjects\FreeMSCP\web\WEB-INF" />
     </key>
   </component>
   <component name="RunManager">
@@ -167,7 +182,8 @@
       <workItem from="1586818346189" duration="2640000" />
       <workItem from="1586821170193" duration="1919000" />
       <workItem from="1586864232915" duration="12009000" />
-      <workItem from="1586877852077" duration="11843000" />
+      <workItem from="1586877852077" duration="14161000" />
+      <workItem from="1586949958593" duration="3509000" />
     </task>
     <task id="LOCAL-00001" summary="Можно работать с таблицами треков и альбомов">
       <created>1586890313789</created>
@@ -176,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586890313789</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Можно работать с таблицами треков и альбомов">
+      <created>1586890515014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586890515014</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,10 +222,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Можно работать с таблицами треков и альбомов" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="859" y="411" key="#Assign_Data_Sources" timestamp="1586890357824">
+    <state x="859" y="411" key="#Assign_Data_Sources" timestamp="1586890375132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="859" y="411" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1586890357824" />
+    <state x="859" y="411" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1586890375132" />
     <state x="440" y="94" width="1347" height="852" key="#Project_Structure" timestamp="1586804558810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -231,6 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="426" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586804557429" />
+    <state x="743" y="414" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586953126409">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="414" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586953126409" />
     <state x="706" y="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586870109980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -239,54 +266,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586804555885" />
-    <state width="1308" height="95" key="GridCell.Tab.0.bottom" timestamp="1586890335698">
+    <state width="1751" height="95" key="GridCell.Tab.0.bottom" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="95" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586890335698" />
-    <state width="1308" height="95" key="GridCell.Tab.0.center" timestamp="1586890335698">
+    <state width="1751" height="95" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.0.center" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="95" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586890335698" />
-    <state width="1308" height="95" key="GridCell.Tab.0.left" timestamp="1586890335698">
+    <state width="1751" height="95" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.0.left" timestamp="1586953144018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="95" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586890335698" />
-    <state width="1308" height="95" key="GridCell.Tab.0.right" timestamp="1586890335698">
+    <state width="1751" height="95" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144018" />
+    <state width="1751" height="95" key="GridCell.Tab.0.right" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="95" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586890335698" />
-    <state width="1751" height="95" key="GridCell.Tab.1.bottom" timestamp="1586890139139">
+    <state width="1751" height="95" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.1.bottom" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139139" />
-    <state width="1751" height="95" key="GridCell.Tab.1.center" timestamp="1586890139139">
+    <state width="1751" height="95" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.1.center" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139139" />
-    <state width="1751" height="95" key="GridCell.Tab.1.left" timestamp="1586890139139">
+    <state width="1751" height="95" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.1.left" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139139" />
-    <state width="1751" height="95" key="GridCell.Tab.1.right" timestamp="1586890139139">
+    <state width="1751" height="95" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.1.right" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139139" />
-    <state width="1751" height="95" key="GridCell.Tab.2.bottom" timestamp="1586890139140">
+    <state width="1751" height="95" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.2.bottom" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139140" />
-    <state width="1751" height="95" key="GridCell.Tab.2.center" timestamp="1586890139139">
+    <state width="1751" height="95" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.2.center" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139139" />
-    <state width="1751" height="95" key="GridCell.Tab.2.left" timestamp="1586890139139">
+    <state width="1751" height="95" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.2.left" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139139" />
-    <state width="1751" height="95" key="GridCell.Tab.2.right" timestamp="1586890139140">
+    <state width="1751" height="95" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
+    <state width="1751" height="95" key="GridCell.Tab.2.right" timestamp="1586953144019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="95" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586890139140" />
+    <state width="1751" height="95" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586953144019" />
     <state width="1751" height="2" key="GridCell.Tab.3.bottom" timestamp="1586879724516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -311,10 +338,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="250" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586790568194" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586890322156">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586890648611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586890322156" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586890648611" />
     <state x="883" y="465" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1586790578419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -335,5 +362,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1016" y="0" width="911" height="1047" key="dock-window-4/0.0.1920.1040@0.0.1920.1040" timestamp="1586881652361" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586950510540">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586950510540" />
   </component>
 </project>

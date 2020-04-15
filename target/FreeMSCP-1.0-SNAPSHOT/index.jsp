@@ -29,7 +29,7 @@
             </tr>
         </table>
     </div>
-    <div class="menu-button">
+    <div class="menu-button" onClick="location.href='${pageContext.request.contextPath}/playerTracks'">
         <table>
             <tr>
                 <th>

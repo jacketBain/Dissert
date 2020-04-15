@@ -15,7 +15,7 @@
                     </th>
                     <th> <p class="headtext">Треки</p></th>
                     <th><a class="inline-link-3" href="${pageContext.request.contextPath}/manager.jsp">Вернуться в меню менеджера</a></th>
-                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/managerAlbum">Отменить изменения и вернуться назад</a></th>
+                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/managerTrack">Отменить изменения и вернуться назад</a></th>
                 </tr>
             </table>
         </div>

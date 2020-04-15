@@ -36,6 +36,7 @@
         </table>
     </div>
     <div align="center">
+        <jsp:useBean id="listTracks" type="java.util.List<com.freemscp.model.Track>" scope="request"/>
         <table>
             <tbody>
             <tr class="profile-avatar">
@@ -48,14 +49,18 @@
                 <td class="profile-avatar-text">Жанр</td>
                 <td class="profile-avatar-text">BPM</td>
                 <td class="profile-avatar-text">Длительность</td>
+                <td class="profile-avatar-text">Тональность</td>
             </tr>
-            <tr class="profile-avatar">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <c:forEach items="${listTracks}" var="listTracks">
+                <tr class="profile-avatar">
+                    <td class="profile-avatar-text">${listTracks.trackName}</td>
+                    <td class="profile-avatar-text">${listTracks.id_album.albumName}</td>
+                    <td class="profile-avatar-text">${listTracks.id_album.id_genre.genreName}</td>
+                    <td class="profile-avatar-text">${listTracks.bpm}</td>
+                    <td class="profile-avatar-text">${listTracks.trackTime}</td>
+                    <td class="profile-avatar-text">${listTracks.id_keynote.keyNote}</td>
+                </tr>
+            </c:forEach>
             </tbody>
         </table>
         <div class="menu-button" onClick="location.href='${pageContext.request.contextPath}/manager.jsp'">
