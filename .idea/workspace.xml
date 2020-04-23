@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="FreeMSCP:war" />
+      <artifact name="Dissert:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -25,27 +25,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fff69bcf-f856-4483-a43f-a9fd5bf56e89" name="Default Changelist" comment="Есть возможность слушать музыку всех пользователей">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96f471e6-f4aa-416a-bef2-514370fffa15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96f471e6-f4aa-416a-bef2-514370fffa15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/model/KeyNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/model/KeyNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/model/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/ManagerAlbumServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/ManagerAlbumServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/ManagerTrackServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freemscp/servlets/ManagerTrackServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/IDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/IDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/impl/ArtistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/impl/ArtistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/impl/GenreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/impl/GenreDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/impl/KeyNoteDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/dao/impl/KeyNoteDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Artist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/KeyNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/KeyNote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Track.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/model/Track.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/services/ArtistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/services/ArtistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/services/GenreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/services/GenreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/services/KeyNoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/services/KeyNoteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/LogOutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/LogOutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ManagerAlbumServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ManagerAlbumServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ManagerTrackServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ManagerTrackServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/ProfileServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/PlayMP3Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/PlayMP3Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/servlets/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/utils/HibernateSessionFactoryUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/WEB-INF/classes/com/freemscp/utils/HibernateSessionFactoryUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/managerAlbumEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/managerAlbumEdit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/managerTrackAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/managerTrackAdd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/playerTracks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/playerTracks.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/resources/css/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/resources/css/mainStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FreeMSCP-1.0-SNAPSHOT/resources/test.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/dao/IDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/dao/IDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/dao/impl/ArtistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/dao/impl/ArtistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/dao/impl/GenreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/dao/impl/GenreDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/dao/impl/KeyNoteDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/dao/impl/KeyNoteDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/model/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/model/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/model/Artist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/model/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/model/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/model/KeyNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/model/KeyNote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/model/Track.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/model/Track.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/services/ArtistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/services/ArtistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/services/GenreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/services/GenreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/services/KeyNoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/services/KeyNoteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/LogOutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/LogOutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ManagerAlbumServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ManagerAlbumServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ManagerTrackServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ManagerTrackServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/ProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/managerAlbumEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/managerAlbumEdit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/PlayMP3Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/PlayMP3Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/servlets/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/freemscp/utils/HibernateSessionFactoryUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freemscp/utils/HibernateSessionFactoryUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/managerTrackAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/managerTrackAdd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/playerTracks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/playerTracks.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/mainStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,14 +127,14 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.34" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.34" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://192.168.1.102:8090/FreeMSCP_war/hello" />
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/hello" />
+      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="FreeMSCP:war">
+        <artifact name="Dissert:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/FreeMSCP_war" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -169,6 +199,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="FreeMSCP:war" />
+          <artifact name="Dissert:war exploded" />
         </option>
       </method>
     </configuration>
@@ -191,6 +222,7 @@
       <workItem from="1586864232915" duration="12009000" />
       <workItem from="1586877852077" duration="14161000" />
       <workItem from="1586949958593" duration="12245000" />
+      <workItem from="1587642860453" duration="6484000" />
     </task>
     <task id="LOCAL-00001" summary="Можно работать с таблицами треков и альбомов">
       <created>1586890313789</created>
@@ -241,18 +273,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="859" y="411" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1586890375132" />
-    <state x="440" y="94" width="1347" height="852" key="#Project_Structure" timestamp="1586804558810">
+    <state x="440" y="94" width="1347" height="852" key="#Project_Structure" timestamp="1587651788485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" width="1347" height="852" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1586804558810" />
+    <state x="440" y="94" width="1347" height="852" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587651788485" />
     <state x="738" y="397" key="#Tomcat_Server" timestamp="1586785923476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="397" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1586785923476" />
-    <state x="414" y="201" width="1092" height="664" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586884155179">
+    <state x="414" y="201" width="1092" height="664" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587651572926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="201" width="1092" height="664" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586884155179" />
+    <state x="414" y="201" width="1092" height="664" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587651572926" />
     <state x="314" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586822990830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,14 +293,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="590" y="208" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586822204276" />
-    <state x="732" y="426" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1586804526574">
+    <state x="732" y="426" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1587651777455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="732" y="426" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1920.1040@0.0.1920.1040" timestamp="1586804526574" />
-    <state x="759" y="426" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1586804557429">
+    <state x="732" y="426" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1920.1040@0.0.1920.1040" timestamp="1587651777455" />
+    <state x="759" y="426" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1587651787238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="426" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586804557429" />
+    <state x="759" y="426" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587651787238" />
     <state x="743" y="414" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586953126409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,78 +309,82 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="706" y="410" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1586870109980" />
-    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1586804555885">
+    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1587651479748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586804555885" />
-    <state width="1751" height="246" key="GridCell.Tab.0.bottom" timestamp="1586963649573">
+    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587651479748" />
+    <state width="1751" height="268" key="GridCell.Tab.0.bottom" timestamp="1587655749585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586963649573" />
-    <state width="1751" height="246" key="GridCell.Tab.0.center" timestamp="1586963649572">
+    <state width="1751" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749585" />
+    <state width="1751" height="268" key="GridCell.Tab.0.center" timestamp="1587655749585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586963649572" />
-    <state width="1751" height="246" key="GridCell.Tab.0.left" timestamp="1586963649572">
+    <state width="1751" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749585" />
+    <state width="1751" height="268" key="GridCell.Tab.0.left" timestamp="1587655749585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586963649572" />
-    <state width="1751" height="246" key="GridCell.Tab.0.right" timestamp="1586963649573">
+    <state width="1751" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749585" />
+    <state width="1751" height="268" key="GridCell.Tab.0.right" timestamp="1587655749585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586963649573" />
-    <state width="1751" height="246" key="GridCell.Tab.1.bottom" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749585" />
+    <state width="1751" height="268" key="GridCell.Tab.1.bottom" timestamp="1587655749503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.1.center" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749503" />
+    <state width="1751" height="268" key="GridCell.Tab.1.center" timestamp="1587655749503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.1.left" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749503" />
+    <state width="1751" height="268" key="GridCell.Tab.1.left" timestamp="1587655749503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.1.right" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749503" />
+    <state width="1751" height="268" key="GridCell.Tab.1.right" timestamp="1587655749503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.2.bottom" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749503" />
+    <state width="1751" height="268" key="GridCell.Tab.2.bottom" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.2.center" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
+    <state width="1751" height="268" key="GridCell.Tab.2.center" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.2.left" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
+    <state width="1751" height="268" key="GridCell.Tab.2.left" timestamp="1587655749503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="246" key="GridCell.Tab.2.right" timestamp="1586963340202">
+    <state width="1751" height="268" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749503" />
+    <state width="1751" height="268" key="GridCell.Tab.2.right" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="246" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586963340202" />
-    <state width="1751" height="2" key="GridCell.Tab.3.bottom" timestamp="1586879724516">
+    <state width="1751" height="268" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
+    <state width="1751" height="268" key="GridCell.Tab.3.bottom" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="2" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586879724516" />
-    <state width="1751" height="2" key="GridCell.Tab.3.center" timestamp="1586879724516">
+    <state width="1751" height="268" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
+    <state width="1751" height="268" key="GridCell.Tab.3.center" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="2" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586879724516" />
-    <state width="1751" height="2" key="GridCell.Tab.3.left" timestamp="1586879724516">
+    <state width="1751" height="268" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
+    <state width="1751" height="268" key="GridCell.Tab.3.left" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="2" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586879724516" />
-    <state width="1751" height="2" key="GridCell.Tab.3.right" timestamp="1586879724516">
+    <state width="1751" height="268" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
+    <state width="1751" height="268" key="GridCell.Tab.3.right" timestamp="1587655749504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1751" height="2" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586879724516" />
+    <state width="1751" height="268" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587655749504" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1586786574763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1586786574763" />
+    <state x="507" y="243" key="RollbackChangesDialog" timestamp="1587654526930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="507" y="243" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587654526930" />
     <state x="742" y="250" key="SettingsEditor" timestamp="1586790568194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

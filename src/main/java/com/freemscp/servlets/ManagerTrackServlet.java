@@ -17,23 +17,20 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletOutputStream;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import javax.sound.sampled.*;
 import java.io.*;
+import java.nio.file.Paths;
 import java.rmi.server.ExportException;
 import java.sql.Blob;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @WebServlet("/managerTrack")
+@MultipartConfig
 public class ManagerTrackServlet  extends HttpServlet {
 
     ArtistService artistService = new ArtistService();
@@ -115,15 +112,19 @@ public class ManagerTrackServlet  extends HttpServlet {
                 track.setId_keynote(keyNoteService.findKeyNoteByName(req.getParameter("trackKeyNote")));
                 track.setTrackName(req.getParameter("trackName"));
 
-                File file = new File(req.getParameter("trackMP3"));
-                byte[] mp3file = new byte[(int) file.length()];
 
-                ServletInputStream servletInputStream = req.getInputStream();
 
-                try(FileInputStream fileInputStream = new FileInputStream(file);) {
-                    fileInputStream.read(mp3file);
-                }
+                Part filePart = req.getPart("trackMP3"); // Retrieves <input type="file" name="file">
+                String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString(); // MSIE fix.
+                File file = new File(fileName);
+                byte[] mp3file = new byte[(int)filePart.getSize()];
+                InputStream fileContent = filePart.getInputStream();
+                fileContent.read(mp3file);
+
                 track.setFileMP3(mp3file);
+
+                FileOutputStream fileOutputStream = new FileOutputStream(file);
+                fileOutputStream.write(mp3file);
 
                 try
                 {

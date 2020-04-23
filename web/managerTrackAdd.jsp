@@ -22,7 +22,7 @@
     </header>
 
     <div align="center">
-    <form id="addTrack" method="post" action="${pageContext.request.contextPath}/managerTrack?action=add">
+    <form id="addTrack" method="post" action="${pageContext.request.contextPath}/managerTrack?action=add" enctype="multipart/form-data">
         <p class="profile-avatar-text">Добавление трека</p>
         <div>
             <jsp:useBean id="listAlbums" type="java.util.List<com.freemscp.model.Album>" scope="request"/>

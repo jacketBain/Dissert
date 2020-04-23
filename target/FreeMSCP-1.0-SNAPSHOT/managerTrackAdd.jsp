@@ -15,14 +15,14 @@
                     </th>
                     <th> <p class="headtext">Треки</p></th>
                     <th><a class="inline-link-3" href="${pageContext.request.contextPath}/manager.jsp">Вернуться в меню менеджера</a></th>
-                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/managerAlbum">Отменить изменения и вернуться назад</a></th>
+                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/managerTrack">Отменить изменения и вернуться назад</a></th>
                 </tr>
             </table>
         </div>
     </header>
 
     <div align="center">
-    <form id="addTrack" method="post" action="${pageContext.request.contextPath}/managerTrack?action=add">
+    <form id="addTrack" method="post" action="${pageContext.request.contextPath}/managerTrack?action=add" enctype="multipart/form-data">
         <p class="profile-avatar-text">Добавление трека</p>
         <div>
             <jsp:useBean id="listAlbums" type="java.util.List<com.freemscp.model.Album>" scope="request"/>
