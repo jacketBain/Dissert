@@ -57,6 +57,14 @@
     background-color: beige;
     border: 1px solid lightgray;
 }
+.profile-avatar-chose-audio
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgb(255,228,170);
+    border: 1px solid lightgray;
+}
 .profile-avatar-text
 {
     vert-align: middle;
@@ -151,18 +159,30 @@
     font-family: Calibri;
     font-size: 20pt;
 }
-
-.metro_red {
+.metro_mini {
     display: inline-block;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+    background: #08C;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+.metro_red_mini {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
     background: #8B0000;
     /* Font styles */
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-family: Calibri;
-    font-size: 20pt;
+    font-size: 14pt;
 }
 
 .metro:hover {
@@ -214,4 +234,7 @@ audio
     -moz-border-radius:7px 7px 7px 7px ;
     -webkit-border-radius:7px 7px 7px 7px ;
     border-radius:7px 7px 7px 7px ;
+}
+.rangeFreq{
+    width: 100%;
 }
