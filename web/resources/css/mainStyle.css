@@ -172,11 +172,36 @@
     font-size: 14pt;
 }
 
+.metro_mini:disabled {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background: darkgray;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
 .metro_red_mini {
     display: inline-block;
     padding: 5px;
     margin: 5px;
     background: #8B0000;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+.metro_red_mini:disabled {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background: darkgrey;
     /* Font styles */
     color: white;
     font-weight: bold;
@@ -237,4 +262,48 @@ audio
 }
 .rangeFreq{
     width: 100%;
+}
+.display-work {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    padding-left: 6px;
+    background-color: black;
+    color: greenyellow;
+    font-family: "Courier New" ;
+    font-size: 21pt;
+}
+.dist_progress{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-family: Calibri;
+    font-size: 20pt;
+    background-color: black;
+    color: greenyellow;
+}
+.dist_progress_danger{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-family: Calibri;
+    font-size: 20pt;
+    background-color: black;
+    color: red;
+}
+.music_selector
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: beige;
+    border: 1px solid lightgray;
+}
+.music_selector:hover
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: burlywood;
+    border: 2px solid lightgray;
 }

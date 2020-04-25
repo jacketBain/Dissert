@@ -4,6 +4,7 @@
 <head>
   <title>Проигрыватель</title>
     <link rel="stylesheet" type="text/css" href="resources/css/mainStyle.css">
+    <script src="resources/js/playerScript.js"></script>
 </head>
 <body background="resources/img/background.png">
     <header>
@@ -19,9 +20,25 @@
             </table>
         </div>
     </header>
+    <div class="profile-avatar">
+        <table>
+            <tr>
+                <td><button id="play" disabled = "true" onclick="playAudio()">Игратб</button></td>
+                <td><button id="pause" disabled = "true" onclick="pauseAudio()">Паузаб</button></td>
+                <td>
+                    <p id="title"></p>
+                    <p id="album"></p>
+                    <p id="artist"></p>
+                </td>
+                <td><audio id="mainAudio" src="" controls></audio></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
     <jsp:useBean id="listTracks" type="java.util.List<com.freemscp.model.Track>" scope="request"/>
         <c:forEach items="${listTracks}" var="listTracks">
-            <div class="profile-avatar">
+            <div class="music_selector" onclick="getAudio('${pageContext.request.contextPath}/player?id_playable=${listTracks.id}',
+                '${listTracks.trackName}','${listTracks.id_album.albumName}','${listTracks.id_album.id_artist.artistName}')">
                 <table>
                     <tr class="profile-avatar-text">
                         <td rowspan="3"><img src="resources/img/song.png" width="128" height="128"></td>
@@ -29,7 +46,6 @@
                         <td>${listTracks.trackName}</td>
                         <td><img src="resources/img/genre.png" width="32" height="32"></td>
                         <td>${listTracks.id_album.id_genre.genreName}</td>
-                        <td rowspan="3"><audio src="${pageContext.request.contextPath}/player?id_playable=${listTracks.id}" controls="controls"></audio></td>
                     </tr>
                     <tr class="profile-avatar-text">
                         <td><img src="resources/img/album.png" width="32" height="32"></td>
@@ -46,8 +62,7 @@
                 </table>
             </div>
         </c:forEach>
-    
-    
-    
+
+
 </body>
 </html>

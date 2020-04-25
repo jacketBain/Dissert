@@ -29,9 +29,35 @@
             </tr>
         </table>
         <hr>
-        <button class="metro_mini" onclick="getAudio('${pageContext.request.contextPath}/player?id_playable=2')">Дать</button>
+        <button class="metro_mini" onclick="getAudio('/resources/03. Царь Горы.mp3')">Дать</button>
         <button class="metro_mini" onclick="playAudio()">Проиграть</button>
         <button class="metro_mini" onclick="stopAudio()">Остановить</button>
+        <button class="metro_mini" onclick="pause()">Пауза</button>
+        <button class="metro_mini" onclick="resume()">ПВернуть</button>
+        <input type="number" id="bpm">
+    </div>
+    <div class="profile-avatar">
+        <table>
+            <tr>
+                <td><img src="resources/img/dist.png" width="32" height="32"></td>
+                <td><p class="profile-avatar-text">Дисторшн</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <input id="distAmountRange" type="range" class="rangeFreq"
+                           min="0" max="400" oninput="setAmountDistortion(this.valueAsNumber)"
+                           onchange="setAmountDistortion(this.valueAsNumber)">
+                </td>
+            </tr>
+            <tr>
+                <td><button id="startDist" disabled = true class="metro_mini" onclick="startDistortion()">Вкл</button></td>
+                <td><button id="stopDist" disabled = true class="metro_red_mini" onclick="stopDistortion()">Выкл</button></td>
+                <td><progress id="amountDist" class="dist_progress" value="0" max="100"></progress></td>
+            </tr>
+        </table>
     </div>
     <div class="profile-avatar">
         <table>
@@ -41,11 +67,32 @@
             </tr>
         </table>
         <hr>
-        <input type="range" class="rangeFreq"
-               min="20" max="8000" oninput="setFreqFilter(this.valueAsNumber)"
-               onchange="setFreqFilter(this.valueAsNumber)">
-        <button class="metro_mini" onclick="startFilter()">Вкл</button>
-        <button class="metro_mini" onclick="stopFilter()">Выкл</button>
+        <table>
+            <tr>
+                <td colspan="5">
+                    <input type="range" class="rangeFreq"
+                                       min="0" max="1" step="0.001" oninput="setFreqFilter(this.valueAsNumber)"
+                                       onchange="setFreqFilter(this.valueAsNumber)">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <input type="range" class="rangeFreq"
+                           min="0" max="10" step="0.01" oninput="setQFilter(this.valueAsNumber)"
+                           onchange="setQFilter(this.valueAsNumber)">
+                </td>
+            </tr>
+            <tr>
+                <td><button id="startFilter" disabled = true class="metro_mini" onclick="startFilter()">Вкл</button></td>
+                <td><button id="stopFilter" disabled = true class="metro_red_mini" onclick="stopFilter()">Выкл</button></td>
+                <td><p id="freq"  class="display-work"> Частота </td>
+                <td><p id="q"  class="display-work"> Добротность </td>
+                <td><select class="display-work" name="albumGenre" size="1" onchange="setTypeFilter(this.value)">
+                        <option>lowpass</option>
+                        <option>highpass</option>
+                </select></td>
+            </tr>
+        </table>
     </div>
     <div class="profile-avatar">
         <table>
@@ -56,7 +103,7 @@
         </table>
         <hr>
         <input type="range" class="rangeFreq"
-               min="0" max="1000" oninput="setFreqOscillatorSound(this.valueAsNumber)"
+               min="0" max="8000" oninput="setFreqOscillatorSound(this.valueAsNumber)"
                onchange="setFreqOscillatorSound(this.valueAsNumber)"></td>
         <hr>
         <table>
