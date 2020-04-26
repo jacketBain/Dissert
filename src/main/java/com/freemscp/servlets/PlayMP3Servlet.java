@@ -19,12 +19,19 @@ public class PlayMP3Servlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException
     {
-        Track track = new Track();
-        track = trackService.findTrack(Integer.parseInt(req.getParameter("id_playable")));
+        Track track = trackService.findTrack(Integer.parseInt(req.getParameter("id_playable")));
+        //byte[] mp3file = track.getFileMP3();
+        //int mp3fileLength = mp3file.length;
         ServletContext context = getServletContext();
         ServletOutputStream out = resp.getOutputStream();
         resp.setContentType("audio/mpeg3");
-        resp.setHeader("Content-disposition", "attachment; filename=mymp3filename.MP3");
+        resp.setContentLength(track.getFileMP3().length);
+        resp.setHeader("Content-disposition", "attachment; filename=mymp3filename.mp3");
+        resp.setHeader("accept-ranges:", "bytes");
+        //resp.setHeader("Content-Length:", String.valueOf(track.getFileMP3().length));
+       // resp.setHeader("Content-Range:", "bytes 0-"+ (track.getFileMP3().length - 1) +"/"+ track.getFileMP3().length);
+        //resp.setHeader("Content-Type:", "audio/mpeg3");
+       // resp.setHeader("Content-Transfer-Encoding:", "binary");
         out.write(track.getFileMP3());
         out.flush();
         out.close();

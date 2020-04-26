@@ -172,11 +172,36 @@
     font-size: 14pt;
 }
 
+.metro_mini:disabled {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background: darkgray;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
 .metro_red_mini {
     display: inline-block;
     padding: 5px;
     margin: 5px;
     background: #8B0000;
+    /* Font styles */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+.metro_red_mini:disabled {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background: darkgrey;
     /* Font styles */
     color: white;
     font-weight: bold;
@@ -211,30 +236,96 @@
     background-position: 0 -1.7em;
 }
 
-audio:hover, audio:focus, audio:active
-{
-    -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-    -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    transform: scale(1.05);
-}
 
-
-audio
-{
-    -webkit-transition:all 0.5s linear;
-    -moz-transition:all 0.5s linear;
-    -o-transition:all 0.5s linear;
-    transition:all 0.5s linear;
-    -moz-box-shadow: 2px 2px 4px 0px #006773;
-    -webkit-box-shadow:  2px 2px 4px 0px #006773;
-    box-shadow: 2px 2px 4px 0px #006773;
-    -moz-border-radius:7px 7px 7px 7px ;
-    -webkit-border-radius:7px 7px 7px 7px ;
-    border-radius:7px 7px 7px 7px ;
-}
 .rangeFreq{
     width: 100%;
 }
+.display-work {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    padding-left: 6px;
+    background-color: black;
+    color: greenyellow;
+    font-family: "Courier New" ;
+    font-size: 21pt;
+}
+.dist_progress{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-family: Calibri;
+    font-size: 20pt;
+    background-color: black;
+    color: greenyellow;
+}
+.dist_progress_danger{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-family: Calibri;
+    font-size: 20pt;
+    background-color: black;
+    color: red;
+}
+.music_selector
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: beige;
+    border: 1px solid lightgray;
+}
+.music_selector:hover
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #ffe39c;
+    border: 2px solid lightgray;
+}
+.music_selector:active {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #ffd56b;
+    border: 3px solid lightgray;
+}
+.progress {
+    display: inline-block;
+    padding: 1px;
+    font-size: 20pt;
+    color: darkgrey;
+}
+.profile-avatar-text-music
+{
+    vert-align: middle;
+    font-family: Calibri;
+    font-size: 12pt;
+    margin: 2px;
+}
+.player
+{
+    background: url("/resources/img/playerBack.jpg");
+    background-repeat: repeat-x;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.player-time
+{
+    vert-align: middle;
+    font-family: Consolas;
+    font-size: 12pt;
+    margin: 2px;
+}
+.player-tags
+{
+    font-family: Consolas;
+    font-size: 10pt;
+    margin: 1px;
+    padding: 1px;
+}
+
+

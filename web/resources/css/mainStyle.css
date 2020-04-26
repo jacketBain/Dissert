@@ -236,30 +236,7 @@
     background-position: 0 -1.7em;
 }
 
-audio:hover, audio:focus, audio:active
-{
-    -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-    -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    transform: scale(1.05);
-}
 
-
-audio
-{
-    -webkit-transition:all 0.5s linear;
-    -moz-transition:all 0.5s linear;
-    -o-transition:all 0.5s linear;
-    transition:all 0.5s linear;
-    -moz-box-shadow: 2px 2px 4px 0px #006773;
-    -webkit-box-shadow:  2px 2px 4px 0px #006773;
-    box-shadow: 2px 2px 4px 0px #006773;
-    -moz-border-radius:7px 7px 7px 7px ;
-    -webkit-border-radius:7px 7px 7px 7px ;
-    border-radius:7px 7px 7px 7px ;
-}
 .rangeFreq{
     width: 100%;
 }
@@ -304,6 +281,51 @@ audio
     margin-bottom: 5px;
     margin-top: 5px;
     padding: 5px;
-    background-color: burlywood;
+    background-color: #ffe39c;
     border: 2px solid lightgray;
 }
+.music_selector:active {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #ffd56b;
+    border: 3px solid lightgray;
+}
+.progress {
+    display: inline-block;
+    padding: 1px;
+    font-size: 20pt;
+    color: darkgrey;
+}
+.profile-avatar-text-music
+{
+    vert-align: middle;
+    font-family: Calibri;
+    font-size: 12pt;
+    margin: 2px;
+}
+.player
+{
+    background: url("/resources/img/playerBack.jpg");
+    background-repeat: repeat-x;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.player-time
+{
+    vert-align: middle;
+    font-family: Consolas;
+    font-size: 12pt;
+    margin: 2px;
+}
+.player-tags
+{
+    font-family: Consolas;
+    font-size: 10pt;
+    margin: 1px;
+    padding: 1px;
+}
+
+
