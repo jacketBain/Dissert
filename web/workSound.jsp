@@ -5,6 +5,7 @@
   <title>Работа со звуком</title>
     <link rel="stylesheet" type="text/css" href="resources/css/mainStyle.css">
     <script src="/resources/js/soundScripts.js"></script>
+    <script src="resources/js/playerScript.js"></script>
 </head>
 <body background="resources/img/background.png">
     <header>
@@ -15,26 +16,36 @@
                         <img src="resources/img/mixer.png" width="64" height="64">
                     </th>
                     <th> <p class="headtext">Работа со звуком</p></th>
-                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/index.jsp">Вернуться в главное меню</a></th>
+                    <th><a class="inline-link-3" href="${pageContext.request.contextPath}/playerTracks">Вернуться в плеер</a></th>
                     <th><a class="inline-link-3" href="${pageContext.request.contextPath}/logout">Выйти</a></th>
                 </tr>
             </table>
         </div>
     </header>
-    <div class="profile-avatar-chose-audio">
+    <div class="player">
         <table>
-            <tr>
-                <td><img src="resources/img/track.png" width="32" height="32"></td>
-                <td><p class="profile-avatar-text">Выбрать песню</p></td>
+            <tbody>
+            <tr id="infoTrack">
+                <td rowspan="3"><img src="resources/img/cassette.png" width="64" height="64"></td>
+                <td class="player-tags"><p id="title" style="margin: 1px">${titlePlayer}</p></td>
+                <td rowspan="3"><img src="resources/img/playerPlay.png" id="play"></img></td>
+                <td rowspan="3"><img src="resources/img/playerPause.png" id="pause"></img></td>
+                <td rowspan="3" class="player-time"><p id="currTime">00:00</p></td>
+                <td rowspan="3" id="progress_td">
+                    <progress class="progress" value='0' max='100' id='progress_play'></progress>
+                </td>
+                <td rowspan="3"  class="player-time"><p>${durPlayer}</p></td>
+                <td rowspan="3"  class="player-time"><button class="metro_mini" onclick="initPlayerForWork()">Включить</button></td>
             </tr>
+            <tr>
+                <td class="player-tags"><p id="album" style="margin: 1px">${albumPlayer}</p></td>
+            </tr>
+            <tr>
+                <td class="player-tags"><p id="artist" style="margin: 1px">${artistPlayer}</p></td>
+            </tr>
+            </tbody>
         </table>
-        <hr>
-        <button class="metro_mini" onclick="getAudio('/resources/03. Царь Горы.mp3')">Дать</button>
-        <button class="metro_mini" onclick="playAudio()">Проиграть</button>
-        <button class="metro_mini" onclick="stopAudio()">Остановить</button>
-        <button class="metro_mini" onclick="pause()">Пауза</button>
-        <button class="metro_mini" onclick="resume()">ПВернуть</button>
-        <input type="number" id="bpm">
+        <audio id="playerWork" src="${pageContext.request.contextPath}/player?id_playable=${id_play}"></audio>
     </div>
     <div class="profile-avatar">
         <table>

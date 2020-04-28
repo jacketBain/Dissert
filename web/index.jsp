@@ -39,15 +39,5 @@
             </tr>
         </table>
     </div>
-    <div class="menu-button" onClick="location.href='${pageContext.request.contextPath}/workSound'">
-        <table>
-            <tr>
-                <th>
-                    <img src="resources/img/mixer.png" width="64" height="64">
-                </th>
-                <th> <p class="menu-button-text">Работа со звуком</p></th>
-            </tr>
-        </table>
-    </div>
 </body>
 </html>

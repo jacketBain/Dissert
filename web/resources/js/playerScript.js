@@ -1,4 +1,4 @@
-var player = null;
+var player = document.getElementById('player');
 
 var currTime = null;
 var durationTime = null;
@@ -22,27 +22,11 @@ function audioTime(time) {
     return minutesVal + ':' + secondsVal;
 }
 
+
 function addPlayer(url,title,album,artist,time) {
-    if(document.getElementById('player_td')!=null)
-    {
-        document.getElementById('player_td').remove();
-    }
-    var request = new XMLHttpRequest();
-    request.open("GET", "/assets/audio/18.mp3", true);
-    request.responseType = "blob";
-
-    var td = document.createElement("td")
-    td.setAttribute('id','player_td')
-    document.getElementById('infoTrack').append(td);
-
-    player = document.createElement("audio");
+    player = document.getElementById('player');
     player.setAttribute('src',url);
-    player.setAttribute('id','player');
-    player.setAttribute('preload','none');
     player.setAttribute('autoplay','true');
-    //player.setAttribute('controls','controls');
-    document.getElementById('player_td').append(player);
-
     document.getElementById('title').innerHTML=title;
     document.getElementById('album').innerHTML=album;
     document.getElementById('artist').innerHTML=artist;
@@ -50,19 +34,27 @@ function addPlayer(url,title,album,artist,time) {
     durationTime = document.getElementById('duration');
     durationTime.innerHTML = time;
     progressPlay = document.getElementById('progress_play');
-    player = document.getElementById('player');
     addEvents();
 
+}
+function initPlayerForWork() {
+    player = document.getElementById('playerWork');
+    player.setAttribute('autoplay','true');
+    currTime = document.getElementById('currTime');
+    durationTime = document.getElementById('duration');
+    progressPlay = document.getElementById('progress_play');
+    addEvents();
+    getAudio();
 }
 function addEvents() {
     document.getElementById('play').addEventListener('click',playTrack);
     document.getElementById('pause').addEventListener('click',pauseTrack);
     player.addEventListener('timeupdate',audioTimeShow);
     progressPlay.addEventListener('click',e => setPlayTime(e));
-
 }
 function playTrack() {
     player.play()
+
 }
 function pauseTrack() {
     player.pause();

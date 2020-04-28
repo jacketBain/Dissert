@@ -42,35 +42,7 @@
             </tr>
             </tbody>
         </table>
-        <%--<table>
-            <tr id="infoTrack">
-                <td>
-                    <img src="resources/img/cassette.png" width="64" height="64">
-                </td>
-                <td class="player-tags">
-                    <p id="title" style="margin: 1px"></p>
-                    <hr>
-                    <p id="album" style="margin: 1px"></p>
-                    <hr>
-                    <p id="artist" style="margin: 1px"></p>
-                </td>
-                <td>
-                    <img src="resources/img/playerPlay.png" id="play"></img>
-                </td>
-                <td>
-                    <img src="resources/img/playerPause.png" id="pause"></img>
-                </td>
-                <td class="player-time">
-                    <p id="currTime">00:00</p>
-                </td>
-                <td id="progress_td">
-                    <progress class="progress" value='0' max='100' id='progress_play'></progress>
-                </td>
-                <td class="player-time">
-                    <p id="duration">10:00</p>
-                </td>
-            </tr>
-        </table>--%>
+        <audio id="player"></audio>
     </div>
     <jsp:useBean id="listTracks" type="java.util.List<com.freemscp.model.Track>" scope="request"/>
         <c:forEach items="${listTracks}" var="listTracks">
@@ -83,6 +55,18 @@
                         <td>${listTracks.trackName}</td>
                         <td><img src="resources/img/genre.png" width="16" height="16"></td>
                         <td>${listTracks.id_album.id_genre.genreName}</td>
+                        <td rowspan="3" align="right">
+                            <div class="menu-button" onClick="location.href='${pageContext.request.contextPath}/workSound?id=${listTracks.id}'">
+                            <table>
+                                <tr>
+                                    <th>
+                                        <img src="resources/img/mixer.png" width="48" height="48">
+                                    </th>
+                                    <th> <p class="profile-avatar-text-music">Работа со звуком</p></th>
+                                </tr>
+                            </table>
+                        </div>
+                            <%--<button onclick="">Работа</button></td>--%>
                     </tr>
                     <tr class="profile-avatar-text-music">
                         <td><img src="resources/img/album.png" width="16" height="16"></td>

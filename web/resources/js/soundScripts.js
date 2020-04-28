@@ -1,5 +1,4 @@
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-var context = new AudioContext();
 
 var isConnectSource = false;
 var isConnectFilter = false;
@@ -13,10 +12,8 @@ oscillator.type = 'sine';
 
 var filter = audioCtx.createBiquadFilter();
 
-
-var mp3file = null;
+var player = null;
 var source = null;
-
 
 
 function setFreqOscillatorSound(freq) {
@@ -33,29 +30,21 @@ function stopOscillatorSound() {
     oscillator.disconnect();
 }
 
-function getAudio(url) {
-    var request = new XMLHttpRequest();
-    request.open('GET', url, true);
-    request.responseType = 'arraybuffer';
-    request.onload = function() {
-        audioCtx.decodeAudioData(request.response, function(buffer) {
-            mp3file = buffer;
-        }, onerror);
-    }
-    request.send();
+function getAudio() {
+    player = document.querySelector('audio');
+    source = audioCtx.createMediaElementSource(player);
+    playAudio();
+
 }
 function playAudio() {
-    source = audioCtx.createBufferSource();
-    source.buffer = mp3file;
     source.connect(audioCtx.destination);
     document.getElementById("startFilter").disabled = false;
     document.getElementById("stopFilter").disabled = false;
     document.getElementById("startDist").disabled = false;
     document.getElementById("stopDist").disabled = false;
-    source.start(0);
     isConnectSource=true;
 }
-function stopAudio() {
+/*function stopAudio() {
     document.getElementById("startFilter").disabled = true;
     document.getElementById("stopFilter").disabled = true;
     stopFilter();
@@ -66,7 +55,7 @@ function pause() {
 }
 function resume() {
     audioCtx.resume();
-}
+}*/
 
 function startFilter() {
     source.disconnect();
